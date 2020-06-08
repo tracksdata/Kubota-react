@@ -1,0 +1,20 @@
+React topics
+---------------
+
+    - what is a component
+    - props and state management
+    - life cycle methods
+    - context
+    - container components
+    - higher order components
+
+    ------------------------------
+
+    - forms and http api (axios / async await)
+    - routers
+    - redux
+    - functional components and hooks
+    - testing
+    - depployment
+
+    --------------------------------
