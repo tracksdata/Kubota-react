@@ -1,0 +1,14 @@
+
+1. npx create-react-app app1
+2. cd app1
+3. npm start
+------------------
+
+or 
+
+1. yarn create react-app app1
+2. cd app1
+3. yarn start
+
+-----------------------
+
