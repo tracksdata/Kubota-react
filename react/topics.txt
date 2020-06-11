@@ -18,3 +18,21 @@ React topics
     - depployment
 
     --------------------------------
+
+
+Lab
+----------------------------------------------------------------
+meterialize css
+
+npm install materialize-css@next
+npm install react-materialize
+
+goto public/index.html
+add folowing link
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 
+ go to src/index.js, then add folowing 
+ import 'materialize-css/dist/css/materialize.css';
+ import 'materialize-css/dist/js/materialize.js';
+
+ thats all good
