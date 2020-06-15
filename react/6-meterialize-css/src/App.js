@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Icon, CollapsibleItem, Collapsible } from 'react-materialize';
+import Greet from './components/Greet';
 
 class App extends Component {
   render() {
@@ -16,19 +17,26 @@ class App extends Component {
         <Collapsible accordion>
           <CollapsibleItem
             expanded={true}
-            header="react components"
+            header="App Component"
             icon={<Icon>filter_drama</Icon>}
             node="div"
           >
 
             <div>
-              <h1>Demo1</h1>
+             <h1>App Component</h1>
             </div>
 
+          </CollapsibleItem>
+
+          <CollapsibleItem
+            expanded={true}
+            header="Greet Component"
+            icon={<Icon>filter_drama</Icon>}
+            node="div"
+          >
             <div>
-              <h1>Demo2</h1>
+              <Greet />
             </div>
-
 
           </CollapsibleItem>
 
