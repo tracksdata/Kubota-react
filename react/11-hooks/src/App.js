@@ -9,6 +9,8 @@ import HookAutoCount from './components/use-effect/HookAutoCount';
 import HookMouseMove from './components/use-effect/HookMouseMove';
 import HookTitleChange from './components/use-effect/HookTitleChange';
 import UserHook from './components/use-effect/UserHook';
+import Root from './components/use-context/Root';
+import HookVotingBox from './components/use-reducer/HookVotingBox';
 const App = () => {
   return (
     <div className="container">
@@ -52,17 +54,14 @@ const App = () => {
 
       <Collapsible accordion>
         <CollapsibleItem
-          expanded={true}
+          expanded={false}
           header="use-effect"
           icon={<Icon>filter_drama</Icon>}
           node="div"
         >
           <div className="row">
             <div className="col s6">
-              <ClassAutoCount >
-              
-              
-              </ClassAutoCount>
+              <ClassAutoCount />
             </div>
 
             <div className="col s6">
@@ -81,6 +80,32 @@ const App = () => {
 
           </div>
 
+
+        </CollapsibleItem>
+      </Collapsible>
+
+      <Collapsible accordion>
+        <CollapsibleItem
+          expanded={false}
+          header="use-effect"
+          icon={<Icon>filter_drama</Icon>}
+          node="div"
+        >
+
+          <Root />
+
+        </CollapsibleItem>
+      </Collapsible>
+
+      <Collapsible accordion>
+        <CollapsibleItem
+          expanded={true}
+          header="use-effect"
+          icon={<Icon>filter_drama</Icon>}
+          node="div"
+        >
+
+          <HookVotingBox/>
 
         </CollapsibleItem>
       </Collapsible>
